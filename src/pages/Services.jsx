@@ -13,7 +13,7 @@ const Services = () => {
       </section>
 
       <section className="section pattern-dots">
-        <div className="container grid grid-cols-2 gap-12" style={{ gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }}>
+        <div className="container grid grid-cols-2 gap-12">
           {/* Data Engineering */}
           <div style={{ display: 'flex', gap: 'var(--spacing-6)' }}>
             <div style={{ color: 'var(--color-primary)' }}><Database size={40} /></div>

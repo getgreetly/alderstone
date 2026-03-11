@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="section-bg" style={{ borderTop: '1px solid var(--color-border)', padding: 'var(--spacing-16) 0 var(--spacing-8)' }}>
-      <div className="container grid grid-cols-4 gap-8 fade-in">
+      <div className="container grid grid-cols-4 gap-8 fade-in footer-grid">
         <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-4)' }}>
           <Link to="/" style={{ color: 'var(--color-primary)', fontWeight: '700', fontSize: '1.25rem', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 'var(--spacing-3)' }}>
             <img src="/src/assets/logo.png" alt="Alderstone Logo Mark" style={{ height: '32px', width: 'auto' }} />
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       
-      <div className="container mt-8 pt-8" style={{ borderTop: '1px solid var(--color-border)', marginTop: 'var(--spacing-8)', paddingTop: 'var(--spacing-8)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="container mt-8 pt-8 footer-bottom" style={{ borderTop: '1px solid var(--color-border)', marginTop: 'var(--spacing-8)', paddingTop: 'var(--spacing-8)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <p style={{ fontSize: '0.8rem', margin: 0 }}>&copy; {new Date().getFullYear()} Alderstone Consulting. All rights reserved.</p>
         <div style={{ display: 'flex', gap: 'var(--spacing-4)' }}>
           <Link to="#" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Privacy Policy</Link>

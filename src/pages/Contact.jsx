@@ -14,13 +14,13 @@ const Contact = () => {
     <div className="fade-in">
       <section className="section gradient-primary pattern-dots-dark" style={{ position: 'relative', overflow: 'hidden' }}>
          <div className="container text-center" style={{ maxWidth: '800px', position: 'relative', zIndex: 1 }}>
-          <h1 style={{ marginBottom: 'var(--spacing-6)', color: '#fff', fontSize: '3rem' }}>Contact <span className="gradient-text">Us</span></h1>
+          <h1 className="fade-in" style={{ marginBottom: 'var(--spacing-6)', color: '#fff' }}>Contact <span className="gradient-text">Us</span></h1>
           <p style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', lineHeight: '1.6' }}>Book a 30-minute consultation to discuss your data challenges and explore how we can support your business growth.</p>
         </div>
       </section>
 
       <section className="section pattern-dots">
-         <div className="container grid grid-cols-2 gap-12" style={{ gridTemplateColumns: '1fr 1fr' }}>
+         <div className="container grid grid-cols-2 gap-12">
             
             {/* Contact Information */}
             <div>

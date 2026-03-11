@@ -18,13 +18,13 @@ const Home = () => {
           <div className="fade-in" style={{ padding: '4px 12px', borderRadius: '100px', backgroundColor: 'rgba(2, 132, 199, 0.2)', border: '1px solid var(--color-accent)', color: 'var(--color-accent)', fontSize: '0.875rem', fontWeight: '500' }}>
             Enterprise Data Engineering & Analytics
           </div>
-          <h1 style={{ color: '#fff', fontSize: '4.5rem', lineHeight: '1.05', letterSpacing: '-0.03em' }} className="fade-in">
+          <h1 className="fade-in hero-text">
             Build a Data Foundation Your Business Can <span className="gradient-text">Trust.</span>
           </h1>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '1.35rem', maxWidth: '600px', margin: '0', lineHeight: '1.6' }} className="fade-in">
+          <p className="fade-in hero-subtext">
             We help growing companies design reliable data pipelines, analytics systems, and dashboards that turn raw data into clear business decisions.
           </p>
-          <div style={{ display: 'flex', gap: 'var(--spacing-4)', marginTop: 'var(--spacing-4)' }} className="fade-in">
+          <div className="fade-in flex-mobile-col" style={{ display: 'flex', gap: 'var(--spacing-4)', marginTop: 'var(--spacing-4)' }}>
             <Button to="/contact" variant="accent" style={{ padding: '1rem 2rem', fontSize: '1.125rem', boxShadow: 'var(--shadow-hero)' }}>Book a Consultation</Button>
             <Button to="/services" style={{ padding: '1rem 2rem', fontSize: '1.125rem', backgroundColor: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)', color: '#fff' }}>View Services</Button>
           </div>
@@ -47,7 +47,7 @@ const Home = () => {
 
       {/* Problem Section */}
       <section className="section section-bg pattern-dots">
-        <div className="container grid grid-cols-2 gap-12 items-center" style={{ gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: 'var(--spacing-16)' }}>
+        <div className="container grid grid-cols-2 gap-12 items-center">
           <div className="fade-in">
             <h2 style={{ marginBottom: 'var(--spacing-6)' }}>Most companies have data. <br/>Few can actually use it.</h2>
             <p style={{ fontSize: '1.125rem' }}>We help companies transform fragmented data into reliable systems that support confident decision making.</p>
@@ -71,15 +71,15 @@ const Home = () => {
         <div className="container">
           <div className="grid grid-cols-3 gap-8 text-center" style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div className="metric-card padding-6" style={{ padding: 'var(--spacing-6)' }}>
-               <h3 className="gradient-text animate-pulse-glow" style={{ fontSize: '3.5rem', margin: '0 0 var(--spacing-2) 0', display: 'inline-block' }}>50%</h3>
+               <h3 className="gradient-text animate-pulse-glow metric-text">50%</h3>
                <p style={{ fontWeight: '600', color: 'var(--color-primary)', fontSize: '1.125rem' }}>Faster Time to Insights</p>
             </div>
              <div className="metric-card padding-6" style={{ padding: 'var(--spacing-6)' }}>
-               <h3 className="gradient-text animate-pulse-glow" style={{ fontSize: '3.5rem', margin: '0 0 var(--spacing-2) 0', display: 'inline-block' }}>20M+</h3>
+               <h3 className="gradient-text animate-pulse-glow metric-text">20M+</h3>
                <p style={{ fontWeight: '600', color: 'var(--color-primary)', fontSize: '1.125rem' }}>Rows Processed Daily</p>
             </div>
              <div className="metric-card padding-6" style={{ padding: 'var(--spacing-6)' }}>
-               <h3 className="gradient-text animate-pulse-glow" style={{ fontSize: '3.5rem', margin: '0 0 var(--spacing-2) 0', display: 'inline-block' }}>99.9%</h3>
+               <h3 className="gradient-text animate-pulse-glow metric-text">99.9%</h3>
                <p style={{ fontWeight: '600', color: 'var(--color-primary)', fontSize: '1.125rem' }}>Pipeline Uptime</p>
             </div>
           </div>

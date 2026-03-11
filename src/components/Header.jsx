@@ -14,12 +14,13 @@ const Header = () => {
   ];
 
   return (
-    <header className="glass" style={{ position: 'sticky', top: 0, zIndex: 50, padding: 'var(--spacing-4) var(--spacing-6)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderBottom: '1px solid var(--color-border)' }}>
-      <Link to="/" style={{ color: 'var(--color-primary)', fontWeight: '700', fontSize: '1.25rem', letterSpacing: '-0.02em', textDecoration: 'none' }}>
-        Alderstone<span style={{ color: 'var(--color-accent)' }}>.</span>
+    <header className="glass header-content" style={{ position: 'sticky', top: 0, zIndex: 50, padding: 'var(--spacing-4) var(--spacing-6)', borderBottom: '1px solid var(--color-border)' }}>
+      <Link to="/" style={{ color: 'var(--color-primary)', fontWeight: '700', fontSize: '1.25rem', letterSpacing: '-0.02em', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 'var(--spacing-3)' }}>
+        <img src="/src/assets/logo.png" alt="Alderstone Logo Mark" style={{ height: '32px', width: 'auto' }} />
+        <span>Alderstone<span style={{ color: 'var(--color-accent)' }}>.</span></span>
       </Link>
 
-      <nav style={{ display: 'flex', gap: 'var(--spacing-6)', alignItems: 'center' }}>
+      <nav className="nav-menu">
         {navItems.map((item) => (
           <Link
             key={item.path}
