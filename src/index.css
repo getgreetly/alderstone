@@ -185,6 +185,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mobile-menu-btn {
+  display: none;
 }
 
 .nav-menu {
@@ -205,14 +210,22 @@ button {
     grid-template-columns: 1fr !important;
   }
   .section { padding: var(--spacing-16) 0; }
-  .header-content {
-    flex-direction: column;
-    gap: var(--spacing-4);
+  .mobile-menu-btn {
+    display: block;
+    cursor: pointer;
   }
   .nav-menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--spacing-4);
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    padding-top: var(--spacing-6);
+    gap: var(--spacing-6);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: var(--spacing-4);
+  }
+  .nav-menu.open {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
   }
   .hero-text { font-size: 2.5rem !important; }
   .hero-subtext { font-size: 1.125rem !important; }
