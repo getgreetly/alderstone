@@ -1,5 +1,7 @@
 import React from 'react';
 import { Users, Target, ShieldCheck } from 'lucide-react';
+import avatarSeun from '../assets/avatar_seun.png';
+import avatarKomi from '../assets/avatar_komi.png';
 
 const About = () => {
   return (
