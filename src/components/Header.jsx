@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const location = useLocation();
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <header className="glass header-content" style={{ position: 'sticky', top: 0, zIndex: 50, padding: 'var(--spacing-4) var(--spacing-6)', borderBottom: '1px solid var(--color-border)' }}>
       <Link to="/" onClick={() => setIsMobileMenuOpen(false)} style={{ color: 'var(--color-primary)', fontWeight: '700', fontSize: '1.25rem', letterSpacing: '-0.02em', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 'var(--spacing-3)' }}>
-        <img src="/src/assets/logo.png" alt="Alderstone Logo Mark" style={{ height: '32px', width: 'auto' }} />
+        <img src={logo} alt="Alderstone Logo Mark" style={{ height: '32px', width: 'auto' }} />
         <span>Alderstone<span style={{ color: 'var(--color-accent)' }}>.</span></span>
       </Link>
 

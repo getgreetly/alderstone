@@ -31,13 +31,13 @@ const About = () => {
           <h2 style={{ marginBottom: 'var(--spacing-12)', textAlign: 'center' }}>Leadership</h2>
           <div className="grid grid-cols-2 gap-12" style={{ maxWidth: '900px', margin: '0 auto' }}>
              <div className="glass" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: 'var(--spacing-8)', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}>
-                <img src="/src/assets/avatar_seun.png" alt="Seun Kasali Avatar" style={{ width: '150px', height: '150px', borderRadius: '50%', marginBottom: 'var(--spacing-6)', border: '4px solid #fff', boxShadow: 'var(--shadow)', objectFit: 'cover' }} />
+                <img src={avatarSeun} alt="Seun Kasali Avatar" style={{ width: '150px', height: '150px', borderRadius: '50%', marginBottom: 'var(--spacing-6)', border: '4px solid #fff', boxShadow: 'var(--shadow)', objectFit: 'cover' }} />
                 <h3 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-2)' }}>Seun Kasali</h3>
                 <p style={{ color: 'var(--color-accent)', fontWeight: '600', marginBottom: 'var(--spacing-4)' }}>Co-Founder & Lead Engineer</p>
                 <p style={{ fontSize: '1rem', color: 'var(--color-secondary)' }}>Expert in building scalable data pipelines and managing large-scale infrastructure on cloud platforms.</p>
              </div>
              <div className="glass" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: 'var(--spacing-8)', borderRadius: '16px', boxShadow: 'var(--shadow-lg)' }}>
-                <img src="/src/assets/avatar_komi.png" alt="Komi Adebosin Avatar" style={{ width: '150px', height: '150px', borderRadius: '50%', marginBottom: 'var(--spacing-6)', border: '4px solid #fff', boxShadow: 'var(--shadow)', objectFit: 'cover' }} />
+                <img src={avatarKomi} alt="Komi Adebosin Avatar" style={{ width: '150px', height: '150px', borderRadius: '50%', marginBottom: 'var(--spacing-6)', border: '4px solid #fff', boxShadow: 'var(--shadow)', objectFit: 'cover' }} />
                 <h3 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-2)' }}>Komi Adebosin</h3>
                 <p style={{ color: 'var(--color-accent)', fontWeight: '600', marginBottom: 'var(--spacing-4)' }}>Co-Founder & Analytics Director</p>
                 <p style={{ fontSize: '1rem', color: 'var(--color-secondary)' }}>Specializes in business intelligence, automated reporting, and translating raw data into strategic business insights.</p>

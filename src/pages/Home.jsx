@@ -1,8 +1,9 @@
 import React from 'react';
-import { Database, LineChart, Cpu, Lightbulb, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Database, LineChart, Cpu, Lightbulb, CheckCircle2 } from 'lucide-react';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import { Link } from 'react-router-dom';
+import heroBg from '../assets/hero-bg.png';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="section" style={{ position: 'relative', overflow: 'hidden', backgroundColor: 'var(--color-primary)', color: '#fff', padding: 'var(--spacing-32) 0 var(--spacing-24)', minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
         {/* Background Graphic */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: 0.6, backgroundImage: 'url(/src/assets/hero-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'screen' }}></div>
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: 0.6, backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'screen' }}></div>
         {/* Gradient Overlay */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 1, background: 'linear-gradient(to right, rgba(7,18,33,0.95) 0%, rgba(7,18,33,0.4) 100%)' }}></div>
 
