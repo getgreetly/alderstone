@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import { Link } from 'react-router-dom';
 import heroBg from '../assets/hero-bg.png';
+import bbbt from '../assets/bbbt.jpg';
 
 const Home = () => {
   return (
@@ -33,15 +34,34 @@ const Home = () => {
       </section>
 
       {/* Trusted By Section */}
-      <section className="section" style={{ padding: 'var(--spacing-8) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: '#fff' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-6)' }}>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Trusted by Data-Driven Teams</p>
-          <div style={{ display: 'flex', gap: 'var(--spacing-12)', flexWrap: 'wrap', justifyContent: 'center', opacity: 0.5, filter: 'grayscale(100%)' }}>
-            {/* Abstract client logo shapes for visual effect */}
-            <div style={{ fontWeight: '800', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}><div style={{ width: '24px', height: '24px', borderRadius: '4px', backgroundColor: 'var(--color-primary)' }}></div>FINTECH CORP</div>
-            <div style={{ fontWeight: '800', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}><div style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: 'var(--color-primary)' }}></div>NEXUS RETAIL</div>
-            <div style={{ fontWeight: '800', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}><div style={{ width: '0', height: '0', borderLeft: '12px solid transparent', borderRight: '12px solid transparent', borderBottom: '24px solid var(--color-primary)' }}></div>ACME LOGISTICS</div>
-            <div style={{ fontWeight: '800', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '8px' }}><div style={{ width: '24px', height: '24px', borderRadius: '50%', border: '4px solid var(--color-primary)' }}></div>SYNAPSE HEALTH</div>
+      <section style={{ padding: 'var(--spacing-10) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: '#fff' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Trusted by Data-Driven Teams</p>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+          </div>
+          <div style={{ display: 'flex', gap: '0', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {['Fintech Corp', 'Kuzad Ltd', 'KKB Luxury LTD', 'Nexus Retail', 'Acme Logistics'].map((name, i, arr) => (
+              <div key={name} style={{ display: 'flex', alignItems: 'center' }}>
+                <span style={{ fontWeight: '700', fontSize: '1.0625rem', color: 'var(--color-primary)', opacity: 0.45, letterSpacing: '0.02em', padding: '0 var(--spacing-6)' }}>{name}</span>
+                {i < arr.length - 1 && <span style={{ color: 'var(--color-border)', fontSize: '1.25rem', fontWeight: '300' }}>|</span>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section style={{ padding: 'var(--spacing-10) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Our Partners</p>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src={bbbt} alt="BBBT – Business Buyer Bulletin Today" style={{ height: '48px', width: 'auto', objectFit: 'contain', opacity: 0.75, filter: 'grayscale(100%)' }} />
           </div>
         </div>
       </section>
@@ -168,38 +188,62 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <section className="section pattern-dots">
-        <div className="container" style={{ maxWidth: '1000px' }}>
-          <h2 style={{ marginBottom: 'var(--spacing-12)', textAlign: 'center' }}>Trusted by Data Leaders</h2>
-          <div className="grid grid-cols-2 gap-8">
-             <div className="glass" style={{ padding: 'var(--spacing-8)', borderRadius: '16px', borderLeft: '4px solid var(--color-accent)' }}>
-               <div style={{ marginBottom: 'var(--spacing-4)', color: 'var(--color-accent)' }}>
-                 <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <div className="container" style={{ maxWidth: '1100px' }}>
+          <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-16)' }}>
+            <p style={{ color: 'var(--color-accent)', fontWeight: '600', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 'var(--spacing-3)' }}>Client Testimonials</p>
+            <h2>Trusted by Data Leaders</h2>
+          </div>
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              {
+                quote: "Alderstone completely transformed our data infrastructure. We moved from manual spreadsheets to an automated data warehouse that our entire executive team trusts.",
+                name: "Sarah Jenkins",
+                role: "VP of Operations",
+                company: "Nexus Retail",
+                initials: "SJ"
+              },
+              {
+                quote: "The BI dashboards Alderstone built for us have become the backbone of our weekly review meetings. They didn't just build pipelines; they gave us clarity.",
+                name: "Marcus Chen",
+                role: "Director of Analytics",
+                company: "Fintech Corp",
+                initials: "MC"
+              },
+              {
+                quote: "We had data sitting in five different places with no way to make sense of it. Alderstone consolidated everything and delivered dashboards our buying team now relies on daily.",
+                name: "Adaeze Okonkwo",
+                role: "Head of Retail Operations",
+                company: "Kuzad Ltd",
+                initials: "AO"
+              },
+              {
+                quote: "Our reporting used to take the team two days every week. Alderstone automated the whole process. We now have accurate sales and inventory insights in real time.",
+                name: "Grace",
+                role: "CEO",
+                company: "KKB Luxury LTD",
+                initials: "G"
+              }
+            ].map((t, i) => (
+              <div key={i} className="fade-in" style={{ backgroundColor: '#fff', borderRadius: '16px', padding: 'var(--spacing-8)', boxShadow: '0 1px 3px rgba(0,0,0,0.06), 0 4px 20px rgba(0,0,0,0.06)', border: '1px solid var(--color-border)', display: 'flex', flexDirection: 'column', gap: 'var(--spacing-6)' }}>
+                <div style={{ color: 'var(--color-accent)', opacity: 0.6 }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                 </svg>
-               </div>
-               <p style={{ fontSize: '1.125rem', color: 'var(--color-text-main)', marginBottom: 'var(--spacing-6)', fontStyle: 'italic', lineHeight: '1.6' }}>
-                  "Alderstone completely transformed our data infrastructure. We moved from manual spreadsheets to an automated data warehouse that our entire executive team trusts."
-               </p>
-               <div>
-                 <p style={{ fontWeight: '600', color: 'var(--color-primary)', marginBottom: 'var(--spacing-1)' }}>Sarah Jenkins</p>
-                 <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>VP of Operations, Nexus Retail</p>
-               </div>
-             </div>
-             
-             <div className="glass" style={{ padding: 'var(--spacing-8)', borderRadius: '16px', borderLeft: '4px solid var(--color-accent)' }}>
-               <div style={{ marginBottom: 'var(--spacing-4)', color: 'var(--color-accent)' }}>
-                 <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                 </svg>
-               </div>
-               <p style={{ fontSize: '1.125rem', color: 'var(--color-text-main)', marginBottom: 'var(--spacing-6)', fontStyle: 'italic', lineHeight: '1.6' }}>
-                  "The BI dashboards Seun and Komi built for us have become the backbone of our weekly review meetings. They didn't just build pipelines; they gave us clarity."
-               </p>
-               <div>
-                 <p style={{ fontWeight: '600', color: 'var(--color-primary)', marginBottom: 'var(--spacing-1)' }}>Marcus Chen</p>
-                 <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>Director of Analytics, Fintech Corp</p>
-               </div>
-             </div>
+                  </svg>
+                </div>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-main)', fontStyle: 'italic', lineHeight: '1.7', flex: 1, margin: 0 }}>
+                  "{t.quote}"
+                </p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', paddingTop: 'var(--spacing-4)', borderTop: '1px solid var(--color-border)' }}>
+                  <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8125rem', fontWeight: '700', flexShrink: 0, letterSpacing: '0.03em' }}>
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p style={{ fontWeight: '600', color: 'var(--color-primary)', marginBottom: '2px', fontSize: '0.9375rem' }}>{t.name}</p>
+                    <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-muted)' }}>{t.role}, {t.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

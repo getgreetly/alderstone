@@ -44,9 +44,9 @@ const Footer = () => {
       <div className="container mt-8 pt-8 footer-bottom" style={{ borderTop: '1px solid var(--color-border)', marginTop: 'var(--spacing-8)', paddingTop: 'var(--spacing-8)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <p style={{ fontSize: '0.8rem', margin: 0 }}>&copy; {new Date().getFullYear()} Alderstone Consulting. All rights reserved.</p>
         <div style={{ display: 'flex', gap: 'var(--spacing-4)' }}>
-          <Link to="#" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Privacy Policy</Link>
-          <Link to="#" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Terms of Service</Link>
-          <Link to="#" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Cookie Policy</Link>
+          <Link to="/privacy-policy" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Privacy Policy</Link>
+          <Link to="/terms-of-service" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Terms of Service</Link>
+          <Link to="/cookie-policy" style={{ color: 'var(--color-secondary)', fontSize: '0.8rem' }}>Cookie Policy</Link>
         </div>
       </div>
     </footer>
