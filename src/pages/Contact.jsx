@@ -39,7 +39,7 @@ const Contact = () => {
                    <MapPin color="var(--color-accent)" size={24} />
                    <div>
                      <h3 style={{ fontSize: '1rem', marginBottom: 'var(--spacing-1)' }}>Office</h3>
-                     <p style={{ color: 'var(--color-secondary)', margin: 0 }}>London, UK (Remote First)</p>
+                     <p style={{ color: 'var(--color-secondary)', margin: 0 }}>Dublin, Ireland (Remote First)</p>
                    </div>
                 </div>
                 

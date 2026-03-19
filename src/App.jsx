@@ -12,6 +12,7 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
 import CookiePolicy from './pages/CookiePolicy'
+import InsightArticle from './pages/InsightArticle'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/insights/:slug" element={<InsightArticle />} />
         </Routes>
       </Layout>
     </Router>

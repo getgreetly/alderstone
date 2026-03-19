@@ -33,39 +33,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Trusted By Section */}
-      <section style={{ padding: 'var(--spacing-10) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: '#fff' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
-            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Trusted by Data-Driven Teams</p>
-            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
-          </div>
-          <div style={{ display: 'flex', gap: '0', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {['Fintech Corp', 'Kuzad Ltd', 'KKB Luxury LTD', 'Nexus Retail', 'Acme Logistics'].map((name, i, arr) => (
-              <div key={name} style={{ display: 'flex', alignItems: 'center' }}>
-                <span style={{ fontWeight: '700', fontSize: '1.0625rem', color: 'var(--color-primary)', opacity: 0.45, letterSpacing: '0.02em', padding: '0 var(--spacing-6)' }}>{name}</span>
-                {i < arr.length - 1 && <span style={{ color: 'var(--color-border)', fontSize: '1.25rem', fontWeight: '300' }}>|</span>}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section style={{ padding: 'var(--spacing-10) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
-            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Our Partners</p>
-            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src={bbbt} alt="BBBT – Business Buyer Bulletin Today" style={{ width: '320px', height: 'auto', objectFit: 'contain' }} />
-          </div>
-        </div>
-      </section>
-
       {/* Problem Section */}
       <section className="section section-bg pattern-dots">
         <div className="container grid grid-cols-2 gap-12 items-center">
@@ -244,6 +211,39 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <section style={{ padding: 'var(--spacing-10) 0', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)', backgroundColor: '#fff' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Trusted by Data-Driven Teams</p>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+          </div>
+          <div style={{ display: 'flex', gap: '0', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {['Fintech Corp', 'Kuzad Ltd', 'KKB Luxury LTD', 'Nexus Retail', 'Acme Logistics'].map((name, i, arr) => (
+              <div key={name} style={{ display: 'flex', alignItems: 'center' }}>
+                <span style={{ fontWeight: '700', fontSize: '1.0625rem', color: 'var(--color-primary)', opacity: 0.45, letterSpacing: '0.02em', padding: '0 var(--spacing-6)' }}>{name}</span>
+                {i < arr.length - 1 && <span style={{ color: 'var(--color-border)', fontSize: '1.25rem', fontWeight: '300' }}>|</span>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section style={{ padding: 'var(--spacing-10) 0', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'var(--spacing-8)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-4)', width: '100%', maxWidth: '720px' }}>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.8125rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em', whiteSpace: 'nowrap' }}>Our Partners</p>
+            <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src={bbbt} alt="BBBT – Business Buyer Bulletin Today" style={{ width: '320px', height: 'auto', objectFit: 'contain' }} />
           </div>
         </div>
       </section>

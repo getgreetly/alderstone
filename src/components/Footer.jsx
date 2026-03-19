@@ -36,7 +36,7 @@ const Footer = () => {
           <h4 style={{ fontSize: '1rem', marginBottom: 'var(--spacing-2)' }}>Connect</h4>
           <Link to="/contact" style={{ color: 'var(--color-secondary)', fontSize: '0.9rem' }}>Contact Us</Link>
           <a href="mailto:info@alderstoneconsulting.com" style={{ color: 'var(--color-secondary)', fontSize: '0.9rem' }}>info@alderstoneconsulting.com</a>
-          <a href="#" style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: 'var(--spacing-2)' }}>LinkedIn</a>
+          <a href="https://www.linkedin.com/company/alderstoneconsulting/" target="_blank" rel="noreferrer" style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: 'var(--spacing-2)' }}>LinkedIn</a>
           <a href="#" style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: 'var(--spacing-2)' }}>Twitter (X)</a>
         </div>
       </div>
