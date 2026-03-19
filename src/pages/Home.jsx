@@ -61,7 +61,7 @@ const Home = () => {
             <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--color-border)' }} />
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src={bbbt} alt="BBBT – Business Buyer Bulletin Today" style={{ height: '48px', width: 'auto', objectFit: 'contain', opacity: 0.75, filter: 'grayscale(100%)' }} />
+            <img src={bbbt} alt="BBBT – Business Buyer Bulletin Today" style={{ width: '320px', height: 'auto', objectFit: 'contain' }} />
           </div>
         </div>
       </section>
