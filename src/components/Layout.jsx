@@ -1,9 +1,13 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
 const Layout = ({ children }) => {
+  const location = useLocation();
+
   useEffect(() => {
+    // Re-run when route changes so new page elements get observed
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -13,14 +17,15 @@ const Layout = ({ children }) => {
           }
         });
       },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.05, rootMargin: '0px 0px -20px 0px' }
     );
 
-    const revealEls = document.querySelectorAll('.reveal');
+    // Only observe elements not yet visible
+    const revealEls = document.querySelectorAll('.reveal:not(.is-visible)');
     revealEls.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  });
+  }, [location.pathname]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'var(--color-bg)' }}>
